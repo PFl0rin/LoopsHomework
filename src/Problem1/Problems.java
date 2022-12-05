@@ -6,8 +6,9 @@ public class Problems {
 
     public static void AlegeExercitiu (int a) {
         Scanner numberN = new Scanner(System.in);
-        System.out.println("Scrie numarul n de iuri: ");
-        int n = numberN.nextInt();
+            System.out.println("Scrie numarul n de randuri: ");
+            int n = numberN.nextInt();
+
 
         switch (a) {
             case 1:
@@ -30,8 +31,12 @@ public class Problems {
                 System.out.println("Exercitiul 5");
                 Exercitiul5(n);
                 break;
+            case 6:
+                System.out.println("Exercitiul 6");
+                Exercitiul6(n);
+                break;
             default:
-                System.out.println("Poti alege doar exercitiile intre valorile 1 si 5.");
+                System.out.println("Poti alege doar exercitiile intre valorile 1 si 6.");
                 break;
         }
     }
@@ -89,6 +94,16 @@ public class Problems {
                 System.out.print("*");
 
             System.out.println("");
+        }
+    }
+
+    public static void Exercitiul6(int n) {
+        int k = 1;
+        for (int i = 1; i<=n; i++) {
+            for (int j = 1; j<i+1; j++) {
+                System.out.print(k++ + " ");
+            }
+            System.out.println();
         }
     }
 }
