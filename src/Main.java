@@ -9,6 +9,7 @@ public class Main {
         Scanner alegeEx = new Scanner(System.in);
         int exercitiu = alegeEx.nextInt();
         Problems.AlegeExercitiu(exercitiu);
+
     }
 
 
